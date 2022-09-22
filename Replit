@@ -1,0 +1,113 @@
+//The link to my website is: https://starter-code-block-3-wallaweebs.compsciib.repl.co/ 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<title>Get to Know Me! ;))</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="script.js">	</script>
+</head>
+
+<body onload= "startupFunction(), myFaveNumber(), bioInfo()">
+	<center>
+		<hl id = "starHeader">»»————　★　————««</hl>
+
+		<div class = "intro">
+			Henlo I'm 
+     <p class = "name">𝔇𝔢𝔟𝔞𝔰𝔯𝔢𝔢</p>
+     <p class = "phonetic"> Deh • bah • sir • eeeeee</p>
+     <p class = "name" id= "bio"> </p> 
+		</div>
+
+     <div class = "section">
+       <p class = "section_header">About me:</p>
+      I'm a Junior at TBLS and I live in <a href= "https://www.google.com/maps/place/Queens,+NY/@40.6509334,-74.1513517,10z/data=!4m5!3m4!1s0x89c24369470a592b:0x4109d18b6c5c7b05!8m2!3d40.7282239!4d-73.7948516" target = "blank"> Queens</a>. 
+      <p> My future goals are to graduate with an IB diploma and hopefully get a scholarship using that. For now, I plan on completeing programs that are of my interests in computer science and technology. I also want to spend time and go to places with my friends more before high school ends. </p>
+      <p> What's your name? </p>
+      <label for="borough">Name: </label>
+      <input type="text" id="borough"/><br/>
+    <input onclick = "hiFunction()" type="button" value="Submit"/> <br/>
+    </div>
+
+    <div class = "section">
+      <p class = "section_header">Hobbies:</p>
+      <p>Reading</p>
+			<p>Playing piano</p>
+      <p>Coding</p>
+			<p>Watching new shows</p>
+			<p>Socializing</p>
+			<p>Playing games</p>
+			<p>Eating good food</p>
+
+      <img src= "https://i.kym-cdn.com/photos/images/newsfeed/001/915/415/ab5.jpg" width="200" height="200" alt= "Emergency Food"/>
+    
+        <img src=  "https://upload-os-bbs.mihoyo.com/upload/2020/10/17/71863228/90285368dd10efe8c424edfb5f43fceb_3539840698845393298.png?x-oss-process=image/resize,s_500/quality,q_80/auto-orient,0/interlace,1/format,png" alt="Cooking" width = "170" height = "200" />
+     </div>
+
+	✷ 　 　 · ˚ * . *　　 * ⋆ 　 . · 　　 ⋆ ˚ 　　 ✦ ⋆ · 　 * ⋆ ✧　 　 · 　 ✧　✵ · ✵ .  　　✷
+    <div class= "section">
+      <p> If my sister is <input type= "number" id= "sis" placeholder = "# of"/> years, then I am </p> <p id = "me"> </p>
+       <button class = "button math" onclick="buttonMath()"> Math </button>
+    </div>
+
+		<div class= "section">
+      <p> Try my tongue twister game! Keep clicking on <button class = "button try" onclick= "buttonTry()"> Try </button>, see if you can say all the words shown quickly :3 </p>
+      <button class = "button many" onclick = "twistCheat()"> Cheat </button>
+      <button class = "button many" onclick = "twistAdd()"> Add </button>
+      <button class = "button many" onclick = "twistShift()"> Remove </button>
+      <p id = "spawn"> </p>
+      
+      </div>
+      
+	<div class = "section">
+    <fieldset>
+    <legend>Quick Questions:</legend>
+    <p> Can a rat get a ball? Choose below! </p>
+   
+    <input type = "radio" name = "option" value = "yes" id = "yes" />  <label for= "yes"> Yes </label>
+
+    <input type = "radio" name = "option" value = "no" id = "no"/> <label for= "no"> No </label>
+   
+    <p><input type="button" onclick = "questionCheck()" value="Submit"/></p>
+    </fieldset>
+
+    <fieldset>
+    <p>What time/times of day do you enjoy most?</p>
+    <input type="checkbox" name="day" id="morning" /> <label for = "morning"> Morning </label>
+    <input type="checkbox" name="day" id="afternoon"/> <label for = "afternoon"> Afternoon </label>
+    <input type="checkbox" name="day" id="evening" /> <label for = "evening"> Evening </label>
+    <p><input type="button" onclick = "dayChoice()" value="Submit"/></p>
+    <p id = "reflect"> </p>
+    </fieldset>
+
+    <fieldset>
+    <p> What's your favorite color?</p>
+    <p id = "summary"> Choose one! </p>
+    <select name="color" id="color">
+    <option value="red">Red</option>
+    <option value="yellow">Yellow</option>
+    <option value="blue">Blue</option>
+    <option value="purple">Purple</option>
+    <option value="pink">Pink</option>
+    <option value="black">Black</option>
+    <option value="green">Green</option>
+    <option value="orange">Orange</option>
+    <option value="grey">Grey</option>
+  </select>
+  <p><input type="button" onclick="colorInterest()" value="Submit"/></p>
+  </fieldset>
+
+  <fieldset>
+    <p><input type="button" onclick="numberCheck()" value="Is It NaN?"/></p>
+    <p><input type="button" onclick="numbersLoop()" value="List Numbers"/></p>
+    <p><input type="button" onclick="consoleLoop()" value="Secret Loop"/></p>
+    <p id = "number"> </p>
+  </fieldset>
+  </div>
+
+	</center>
+
+</body>
+
+</html>
